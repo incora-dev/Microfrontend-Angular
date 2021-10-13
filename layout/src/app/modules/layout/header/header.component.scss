@@ -1,0 +1,15 @@
+.header {
+  padding: 5px;
+  box-shadow: 0 0 3px 1px #80808040;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: #1976D2;
+  cursor: pointer;
+  color: white;
+}

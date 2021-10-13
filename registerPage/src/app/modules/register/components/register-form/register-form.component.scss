@@ -1,0 +1,32 @@
+fieldset {
+  border: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+
+  label {
+    margin-bottom: 8px;
+  }
+
+  input {
+    padding: 10px 10px 10px 0;
+    border: none;
+    border-bottom: 1px solid #808080;
+    outline: none;
+  }
+
+  .error-text {
+    color: red;
+    font-size: 12px;
+  }
+}
+
+button {
+  margin: 16px;
+  padding: 10px 20px;
+  background: #1975d2;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}

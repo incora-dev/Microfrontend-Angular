@@ -1,0 +1,6 @@
+<nav>
+  <a *ngIf="isLogged" [routerLink]="['/']">Home</a>
+  <a *ngIf="!isLogged" [routerLink]="['/signup']" routerLinkActive="active-link">Sign Up</a>
+  <a [routerLink]="['/table']" routerLinkActive="active-link">Table</a>
+  <a [routerLink]="['/static']" routerLinkActive="active-link">Static</a>
+</nav>

@@ -1,0 +1,13 @@
+<main>
+  <header #header></header>
+  <div class="content">
+    <app-navbar [isLogged]="auth.isLogged"></app-navbar>
+    <div class="page-content">
+      <router-outlet *ngIf="!loadingRouteConfig else loading"></router-outlet>
+      <ng-template #loading>
+        <app-loader></app-loader>
+      </ng-template>
+    </div>
+  </div>
+  <footer #footer></footer>
+</main>

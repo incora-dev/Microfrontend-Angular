@@ -1,0 +1,4 @@
+<div class="header">
+  <app-logo></app-logo>
+  <button *ngIf="auth.isLogged" (click)="auth.logout()">Logout</button>
+</div>

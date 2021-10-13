@@ -1,0 +1,20 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  background: #F2F2F2;
+  height: 100%;
+
+  a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      background: grey;
+    }
+  }
+}
+
+.active-link {
+  background: grey;
+}

@@ -1,0 +1,24 @@
+<div class="example-container">
+  <div class="form-container">
+    <form [formGroup]="registerForm" (submit)="submit()">
+      <fieldset>
+        <label>E-mail</label>
+        <input formControlName="email" required>
+        <span class="error-text" *ngIf="registerForm.controls.email.touched && registerForm.controls.email.invalid">
+          <span *ngIf="registerForm.controls.email.errors?.required">This field is mandatory.</span>
+          <span *ngIf="registerForm.controls.email.errors?.pattern">This field is invalid.</span>
+        </span>
+      </fieldset>
+
+      <fieldset>
+        <label>Password</label>
+        <input formControlName="password" type="password" required>
+        <span class="error-text" *ngIf="registerForm.controls.password.touched && registerForm.controls.password.invalid">
+          <span *ngIf="registerForm.controls.password.errors?.required">This field is mandatory.</span>
+        </span>
+      </fieldset>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</div>
